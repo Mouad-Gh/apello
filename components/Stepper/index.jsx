@@ -117,7 +117,7 @@ export default Stepper;
                         <h3 className="font-bold font-azonix">{step.name}</h3>   
                     </div>
                     
-                    <div className={`max-h-80 overflow-hidden ${(currentStep !== i+1 || complete) && "max-h-0"} transition-[max-height] `}>
+                    <div className={`overflow-hidden ${(currentStep !== i+1 || complete) ? "max-h-0" : "max-h-80"} transition-[max-height] `}>
                         <><p className="text-gray-500  step-parag">{step.p}</p>
                         <button className="clip-button p-2 ml-14 bg-violet flex gap-x-3 hover:bg-violet/10 hover:scale-110 transition " 
                             onClick={()=>{
