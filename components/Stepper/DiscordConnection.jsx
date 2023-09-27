@@ -91,8 +91,8 @@ const DiscordConnection = ({ currentStep, setcurrentStep }) => {
       </div>
 
       <div
-        className={`max-h-80 overflow-hidden ${
-          currentStep !== 1 && "max-h-0"
+        className={`overflow-hidden ${
+          currentStep !== 1 ? "max-h-0" : "max-h-80"
         } transition-[max-height] `}
       >
         <>
